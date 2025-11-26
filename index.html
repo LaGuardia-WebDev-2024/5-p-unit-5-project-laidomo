@@ -17,7 +17,10 @@ Select TWO Additional Features to Add
 <!DOCTYPE html>
 <html>
 
+
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
@@ -58,18 +61,57 @@ li a{
 
 
 <body>
+  
+
 <ul>
   <li><a href="index.html">When</a> </li>
   <li><a href="where.html">Where</a></li>
   <li><a href="wtg.html">What to Get</a></li>
 </ul>
- <h4> Invitation to...</h4>
+ <h4> You're Invited To...</h4>
 <h2>Smoke's Third Birthday Party!!!</h2>
+<h2>
+  
+
+  <img src="IMG_1271.jpeg" width="300px">
+  <div style="
+  position:relative;
+  background:#f1f1f1;
+  padding:15px;
+  border-radius:10px;
+  width:270px;
+">
+  Clear your calendars!!
+  <div style="
+    content:'';
+    position:absolute;
+    bottom:0px;
+    left:20px;
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid #f1f1f1;
+  "></div>
+</div>
+
+</h2>
 <h1> When </h1>
 March 1st 2026
 <br> as that is Sire Smokes actual birthday; the party will be on that day.<br>
-Clear your calendars! 
-<imgsrc=
+
+
+<script>
+    // Run confetti when the page loads
+    window.onload = function() {
+      confetti({
+        particleCount: 400,
+        spread: 80,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+  
 </body>
 
 </html>
